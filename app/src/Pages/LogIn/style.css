@@ -1,0 +1,157 @@
+.appointment-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left Section (Image + Text) */
+.left-side {
+  position: relative;
+  flex: 1;
+  background: url('./../../../public/images/istockphoto-2014634732-612x612.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.doctor-info {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  padding: 40px;
+  max-width: 400px;
+}
+
+.doctor-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.doctor-info p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+/* Right Section (Form) */
+.right-side {
+    min-width: 400px;
+    flex: 1;
+    background: white;
+    padding: 60px;
+    overflow-y: auto;
+}
+
+.right-side h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.right-side h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.right-side input {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #f0f0f0;
+  font-size: 1rem;
+  margin-bottom: 5%;
+}
+.submit-button { 
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 12px;
+    background: #0e8227;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    justify-self: center;
+}
+.submit-button:hover {
+    background: #129c30;
+}
+
+.form {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(86, 86, 86, 0.399);
+    width: 30%;
+    min-width: 400px;
+    padding: 5%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 4%;
+    font-family:'Calibri';
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+.text-yellow {
+    color: 	#ffc900
+}
+.text-light-gray {
+    color: 	#b4b4b4
+}
+.form .form-title{
+    margin-bottom: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.form label {
+    text-align: start;
+}
+.form input {
+    background-color: #eeeeee;
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+.form button {
+    
+    width: 100%;
+    padding: 12px;
+    background: #0e8227;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form button:hover {
+    background: #129c30;
+}

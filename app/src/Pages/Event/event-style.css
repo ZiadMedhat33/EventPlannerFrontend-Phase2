@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.delete-button{
+    border: rgba(0, 0, 0, 0.525) 2px solid;
+    border-radius: 10px;
+    background-color: rgb(202, 1, 1);
+    color: rgb(198, 198, 198);
+    width: 100px;
+    padding: 5px;
+}
+.delete-button:hover{
+    border: rgba(255, 255, 255, 0.566) 1px solid;
+    background-color: rgb(98, 6, 6);
+}
